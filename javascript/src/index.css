@@ -1,0 +1,93 @@
+/* 
+I don't love that you can't style a react component on a per component basis. 
+I mean, you probably can but I didn't like the examples i saw.
+*/
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #295a8e;
+  background-color: #FFF;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background: #295a8e;
+  color: #FFF;
+  padding: 1em;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.page {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* charts */
+.chart-view {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 3em;
+}
+
+.chart-view > .chart {
+  width: 75%;
+}
+
+.chart-note {
+  font-size: 10px;
+  margin-top: 5px;
+  border: 1px dashed black;
+  padding: 5px; 
+  border-radius: 4px;
+  background-color: rgba(#ccc, 0.1);
+}
+
+
+/* table */
+.ag-cell-focus {
+  border: none !important;
+}
+
+.ag-cell:focus {
+  outline: none !important;
+}
+
+.quick-filter {
+  margin-bottom: 1em;
+}
+
+
+/* mobile responsiveness */
+@media (max-width: 768px) {
+  .chart-view {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chart-view > .chart {
+    width: 100%;
+  }
+
+  .page {
+    padding: 0;
+    text-align: center;
+  }
+}
